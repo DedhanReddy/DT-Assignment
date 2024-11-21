@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Innovations Web Design</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    /* Header */
+    .header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header .logo {
+      font-size: 28px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .header .logo img {
+      max-width: 70px;
+      margin-right: 10px;
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav ul li {
+      margin-left: 20px;
+    }
+
+    .nav ul li a {
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('innovation.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      background: #FFD700;
+      color: #222;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .hero .btn:hover {
+      transform: scale(1.1);
+      background: #FFBF00;
+    }
+
+    /* About Section */
+    .about {
+      background: #f4f4f4;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services .service-card {
+      background: #fff;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .services .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .services .service-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .services .service-card p {
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-20px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo">
+        <span>AR Innovations</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Welcome to Our World</h2>
+      <p>Creating experiences that matter.</p>
+      <a href="#services" class="btn">Explore More</a>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        We are a team of creative individuals committed to delivering innovative solutions.
+      </p>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-card">
+        <h3>Design</h3>
+        <p>Creating modern and user-friendly designs for web and mobile.</p>
+      </div>
+      <div class="service-card">
+        <h3>Development</h3>
+        <p>Building scalable and high-performance web solutions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Consulting</h3>
+        <p>Helping you strategize and execute digital transformation.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024  AR Innovations| All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
